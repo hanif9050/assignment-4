@@ -1,0 +1,256 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style-type: none;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background: url("images/bg.png");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: scroll;
+    background-size: cover;
+}
+
+nav {
+    height: 50px;
+    width: 100%;
+    padding: 20px 0;
+}
+
+.container {
+    width: 1200px;
+    max-width: 85%;
+    margin: 0 auto;
+}
+
+nav ul {
+    display: flex;
+    justify-content: flex-end;
+    margin: 0px 6px;
+}
+
+nav ul li a {
+    color: #fff;
+    padding: 10px;
+    text-transform: uppercase;
+}
+
+nav ul li a:hover,
+a.active {
+    background-color: #3352F2;
+    border-radius: 5px;
+}
+
+.main-content {
+    display: grid;
+    grid-template-columns: 2fr 3fr;
+    gap: 70px;
+    align-items: center;
+}
+
+.booking-form {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    padding: 25px;
+    border-radius: 5px;
+    float: left;
+}
+
+.booking-form h3 {
+    margin: 10px 0px;
+}
+
+.booking-form .input-group {
+    margin: 10px 0;
+}
+
+.f-class,
+.e-class {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+/* to limit input width */
+
+input#f-class-count,
+input#e-class-count {
+    width: 300px;
+}
+
+.plus-minus-btn {
+    color: #3352F2;
+    font-size: 30px;
+    padding: 2px;
+    margin-top: 10px;
+    word-spacing: 20px;
+}
+
+.booking-form .calculations {
+    margin: 10px 0;
+}
+
+.booking-form .calculations p {
+    font-weight: 500;
+    margin-bottom: 10px;
+}
+
+.booking-form input {
+    width: 100%;
+    display: block;
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    background: #F3F5FF;
+    border-radius: 4px;
+    margin: 10px 0;
+}
+
+.booking-form .inputs {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+}
+
+.booking-content {
+    color: #fff;
+    width: 80%;
+}
+
+.booking-content h1 {
+    font-size: 70px;
+    text-transform: uppercase;
+    font-family: 'Bebas Neue', cursive;
+    font-weight: 400;
+    margin-bottom: 25px;
+}
+
+.btn-style {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    color: #fff;
+    font-weight: 500;
+    background-color: #3352F2;
+}
+
+.amount {
+    display: flex;
+    justify-content: space-between;
+}
+
+
+/* modified css */
+
+#increase-f-class,
+#decrease-f-class,
+#increase-e-class,
+#decrease-e-class {
+    cursor: pointer;
+}
+
+
+/* Style of per ticket price below lebel*/
+
+.ticket-price {
+    opacity: 0.7;
+    font-size: 10px;
+    margin-left: 10px;
+}
+
+
+/* booking confirmation style*/
+
+#confirmation {
+    display: none;
+}
+
+.confirmation {
+    background: linear-gradient(#892cdc, #bc6ff1);
+    color: rgb(231, 227, 227);
+    padding: 20px;
+    border-radius: 25px;
+    box-shadow: 10px 10px 15px rgb(54, 51, 51);
+    position: relative;
+    line-height: 1.8;
+}
+
+.confirmation h1 {
+    margin-bottom: 10px;
+}
+
+.greeting {
+    font-size: 50px;
+    margin-top: 10px;
+}
+
+.icon {
+    color: yellow;
+}
+
+
+/* end of booking confirmation style*/
+
+.button-ic-dc {
+    background-color: lightblue;
+    border-radius: 50%;
+    padding: 5px;
+}
+
+
+/* Disabled arrow of input value*/
+
+
+/* Chrome, Safari, Edge, Opera */
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+
+/* Firefox */
+
+input[type=number] {
+    -moz-appearance: textfield;
+}
+
+
+/*End of Disabled arrow of input value*/
+
+
+/* Disabled selection on increase & decrease button*/
+
+.disable-select {
+    user-select: none;
+    /* supported by Chrome and Opera */
+    -webkit-user-select: none;
+    /* Safari */
+    -khtml-user-select: none;
+    /* Konqueror HTML */
+    -moz-user-select: none;
+    /* Firefox */
+    -ms-user-select: none;
+    /* Internet Explorer/Edge */
+}
+
+
+/* end of Disabled selection on increase & decrease button*/
+
+
+/* media query use to decrease the size in small screen */
+
+@media only screen and (max-width: 1400px) {
+    input#f-class-count,
+    input#e-class-count {
+        width: 200px;
+    }
+}
